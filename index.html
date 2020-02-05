@@ -3,10 +3,37 @@
   <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <title>Page Title</title>
+    <title>Weather App</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/css/bootstrap.min.css"
+    />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <!-- <link rel="stylesheet" type="text/css" media="screen" href="main.css" /> -->
+    <script src="https://code.jquery.com/jquery.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/js/bootstrap.bundle.min.js"></script>
     <script src="weatherapp.js"></script>
   </head>
-  <body></body>
+  <body>
+    <div class="jumbotron" style="background-color: black ; color: white;">
+      <h1 class="text-center">
+        Weather Dashboard
+      </h1>
+    </div>
+    <div class="input-group mb-3 col-4">
+      <input
+        type="text"
+        class="form-control"
+        id="city-search"
+        placeholder="Look up a city"
+        aria-label="Look up a city"
+        aria-describedby="basic-addon2"
+      />
+      <div class="input-group-append">
+        <button type="submit" class="btn btn-primary" id="run-search">
+          Submit
+        </button>
+      </div>
+    </div>
+  </body>
 </html>
